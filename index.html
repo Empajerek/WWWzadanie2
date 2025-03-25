@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje studia</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Nagłówek -->
+    <header class="bg-slate-800 text-white py-6 shadow-xl">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-2">Moje studia</h1>
+            <p class="text-sky-300">Matematyka i informatyka</p>
+        </div>
+    </header>
+    <!-- Główna sekcja-->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Analiza -->
+        <section class="mb-8 bg-emerald-50 p-6 rounded-lg shadow-md">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-emerald-800 mb-4">Analiza matematyczna</h3>
+                    <div class="space-y-4">
+                       <div class="relative bg-white p-4 rounded-md shadow-sm">
+                            <div class="absolute top-2 right-2">
+                                <span class="relative flex h-3 w-3">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                                </span>
+                            </div>
+                            <p class="font-medium text-gray-700">Formy różniczkowe</p>
+                            <p class="text-sm text-gray-500">Ostatni temat</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-md shadow-sm">
+                            <p class="font-medium text-gray-700">Miara powierzchniowa</p>
+                            <p class="text-sm text-gray-500">Poprzedni temat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-lg font-bold text-emerald-800 mb-4"> Serie prac domowych: </h4>
+                    <ul class="list-disc list-inside marker:text-emerald-600">
+                        <li class="pl-4 mt-4">
+                            <a href="#" class="text-lg text-emerald-600 hover:text-emerald-400">Seria nr.1</a>
+                        </li>
+                        <li class="pl-4 mt-4">
+                            <a href="#" class="text-lg text-emerald-600 hover:text-emerald-400">Seria nr.2</a>
+                        </li>
+                        <li class="pl-4 mt-4">
+                            <a href="#" class="text-lg text-emerald-600 hover:text-emerald-400">Seria nr.3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- RP & MD -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="flex-1">
+                <div class="mb-8 bg-red-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-red-800 mb-4"> 
+                        Rachunek prawdopodobieństwa
+                    </h3>
+                    <embed 
+                        src="pdfs/rp.pdf#view=FitH" 
+                        type="application/pdf" 
+                        class="h-60 size-full"
+                        aria-label="Analysis Solutions PDF">
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font bold text-blue-800 mb-4"> 
+                        Matematyka dyskretna
+                    </h3>                    
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-md shadow-sm">
+                            <p class="font-medium text-gray-700">Enumeratory</p>
+                            <p class="text-sm text-gray-500">Ostatni temat</p>
+                        </div>
+                        <div class="relative bg-white p-4 rounded-md shadow-sm">
+                            <a href="#" class="font-medium text-gray-700 hover:text-gray-500">Link</p>
+                            <p class="text-sm text-gray-500">Materiały do kursu</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ukończone kursy -->
+        <!-- <section class="mb-8 bg-purple-50 p-6 rounded-lg shadow-md"> -->
+        <section class="max-w-6xl mx-auto">
+            <h2 class="text-xl font-bold text-purple-800 mb-4">Ukończone kursy:</h2>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full border-collapse">
+                    <thead>
+                        <tr class="bg-purple-100">
+                            <th class="text-left p-3">Nazwa</th>
+                            <th class="text-left p-3">Przykładowa praca</th>
+                            <th class="text-left p-3">Trudność</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white hover:bg-purple-50">
+                            <td class="p-3 border-t">Języki automaty i obliczenia</td>
+                            <td class="p-3 border-t"><a class="text-purple-600 hover:text-purple-400" href="#">praca domowa nr. 3</td>
+                            <td class="p-3 border-t">⭐⭐⭐</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-purple-50">
+                            <td class="p-3 border-t">Geometria algebry liniowej</td>
+                            <td class="p-3 border-t"><a class="text-cyan-600 hover:text-cyan-400" href="#">Zestaw zadań z ćwiczeń</td>
+                            <td class="p-3 border-t">⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-purple-50"></tr>
+                            <td class="p-3 border-t">Topologia</td>
+                            <td class="p-3 border-t"><a class="text-pink-600 hover:text-pink-400" href="#">Notatki z ćwiczeń</td>
+                            <td class="p-3 border-t">⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>  
+    </main>
+    <!-- Stopka -->
+    <footer class="bg-slate-800 text-white py-6 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-sky-300 hover:text-sky-100">Do góry</a>
+                <a href="#" class="text-sky-300 hover:text-sky-100"> Kontakt</a>
+                <a href="#" class="text-sky-300 hover:text-sky-100"> Rozkład jazdy!</a>
+            </div>
+            <p class="text-gray-400 text-sm">@ 2025 Konrad Kaczmarczyk. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer> 
+    
+</body>
+</html>
